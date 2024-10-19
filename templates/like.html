@@ -1,7 +1,7 @@
 {% block like %}
 
-  <input type="text" id="searchInput" class="form-control" placeholder="Search Pokemon" name="name_pokemon">
-  <select id="list-results">
+  <input type="text" id="searchInput" class="form-control" placeholder="Search Pokemon" name="name_pokemon" autocomplete="off">
+  <select id="list-results" class="w-100 p-1">
   </select>
 
   <script src="{{ url_for('static', filename='js/search_like.js') }}"></script>

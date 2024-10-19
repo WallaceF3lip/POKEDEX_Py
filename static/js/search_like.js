@@ -21,3 +21,17 @@ document.getElementById('searchInput').addEventListener('input', function() {
     document.getElementById('list-results').innerHTML = '';
   }
 });
+
+function selecionarOpcao() {
+  const select = document.getElementById('list-results');
+  const input = document.getElementById('searchInput');
+  
+  select.addEventListener('change', function() {
+    const opcaoSelecionada = select.options[select.selectedIndex].value;
+    input.value = opcaoSelecionada;
+  });
+}
+
+window.onload = function() {
+  selecionarOpcao();
+};
